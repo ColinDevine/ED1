@@ -1,19 +1,25 @@
 function setup() { //runs one time
-  createCanvas(720,720);
-  background(255,0,0);
+  createCanvas(windowWidth,windowHeight);
   fill("yellow");
-  strokeWeight(8);
+  strokeWeight(1);
 }
 
 function draw() { //runs in a loop
-  translate(60,60); //resets origin
-  for(var x = 0;x<=300;x+=300){
-      for(var y =0;y<=300;y+=300){
+  
+  var numSides = 2;
+  var sideLen = windowWidth/numSides;
+  
+  for(var x = 0;x<windowWidth;x+=sideLen){
+      for(var y =0;y<windowHeight;y+=sideLen){
           quad(
           x,y,
-          x+300,y,
-          x+300,y+300,
-          x,y+300);
+          x+sideLen,y,
+          x+sideLen,y+sideLen,
+          x,y+sideLen);
       }
   }
+}
+
+function windowResized(){
+  resize(windowWidth, windowHeight); 
 }
