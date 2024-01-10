@@ -1,12 +1,12 @@
 function setup() { //runs one time
   createCanvas(windowWidth,windowHeight);
-  fill("yellow");
+  fill("grey");
   strokeWeight(1);
 }
 
 function draw() { //runs in a loop
   
-  var numSides = 2;
+  var numSides = 10;
   var sideLen = windowWidth/numSides;
   
   for(var x = 0;x<windowWidth;x+=sideLen){
