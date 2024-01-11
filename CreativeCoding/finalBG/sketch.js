@@ -1,6 +1,8 @@
 //adding a GIF to the grid
 let gif;
-function preload('assets/DevineGif.gif');
+function preload(){
+gif = loadImage('assets/DevineGif.gif');
+}
 
 function setup() { //runs one time
   createCanvas(windowWidth,windowHeight);
