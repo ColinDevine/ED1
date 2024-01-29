@@ -3,6 +3,17 @@ html, body {
   padding: 0;
   font-family:'Roboto', sans-serif;
   background-color: LightSlateGray;
+  // <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans-<uniquifier> {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 }
 
 canvas {
