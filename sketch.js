@@ -5,7 +5,7 @@ gif = loadImage('assets/DevineGif.gif');
 }
 
 function setup() { //runs one time
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(windowWidth,windowHeight*2);
   fill("grey");
   strokeWeight(1);
 }
@@ -17,7 +17,7 @@ function draw() { //runs in a loop
   var numSides = 10;
   var sideLen = windowWidth/numSides;
   
-  for(var x = 0;x<windowWidth*2;x+=sideLen){
+  for(var x = 0;x<windowWidth;x+=sideLen){
       for(var y =0;y<windowHeight*2;y+=sideLen){
           image(gif, x, y, sideLen, sideLen);
       }
@@ -25,5 +25,5 @@ function draw() { //runs in a loop
 }
 
 function windowResized(){
-  resizeCanvas(windowWidth, windowHeight); 
+  resizeCanvas(windowWidth, windowHeight*2); 
 }
