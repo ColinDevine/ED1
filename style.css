@@ -36,6 +36,7 @@ h1{
 }
 
 h3{
+  	display: inline; background: rgb(119,136,153);
 color:white;
 }
 
