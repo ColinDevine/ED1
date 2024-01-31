@@ -6,7 +6,7 @@ gif = loadImage('assets/DevineGif.gif');
 
 function setup() { //runs one time
   createCanvas(windowWidth,windowHeight*2);
-  fill("grey");
+  fill("WhiteSmoke");
   strokeWeight(1);
 }
 
